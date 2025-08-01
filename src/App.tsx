@@ -140,7 +140,7 @@ function App() {
     setHighlightedIndex(-1);
   
     try {
-      const res = await fetch(`http://localhost:8000/analyze?ticker=${queryTicker}`);
+      const res = await fetch(`https://graham-backend.onrender.com/analyze?ticker=${queryTicker}`);
       const data = await res.json();
       setResults(data);
       setTicker(queryTicker);
